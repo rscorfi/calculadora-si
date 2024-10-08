@@ -1,3 +1,5 @@
+import volume as vol
+
 def main():
     """
     Função principal do programa.
@@ -46,12 +48,12 @@ def main():
 
         elif escolha == "5":
             litros = float(input("Digite o valor em litros: "))
-            mililitros = None
+            mililitros = vol.litro_mililitro(litros)
             print(f"{litros} litros são {mililitros} mililitros.")
 
         elif escolha == "6":
             mililitros = float(input("Digite o valor em mililitros: "))
-            litros = None
+            litros = vol.mililitro_litro(mililitros)
             print(f"{mililitros} mililitros são {litros} litros.")
 
         elif escolha == "7":
