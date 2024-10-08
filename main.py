@@ -18,8 +18,8 @@ def main():
         print("4. Massa (kg para g)")
         print("5. Volume (l para ml)")
         print("6. Volume (ml para l)")
-        print("7. Velocidade (km/h para m/s)")
-        print("8. Velocidade (m/s para km/h)")
+        #print("7. Velocidade (km/h para m/s)")
+        #print("8. Velocidade (m/s para km/h)")
         print("0. Sair")
 
         escolha = input("Digite sua escolha: ")
@@ -58,15 +58,15 @@ def main():
             litros = vol.mililitro_litro(mililitros)
             print(f"{mililitros} mililitros são {litros} litros.")
 
-        elif escolha == "7":
-            kmph = float(input("Digite o valor em km/h: "))
-            mps = None
-            print(f"{kmph} km/h são {mps} m/s.")
+        #elif escolha == "7":
+         #   kmph = float(input("Digite o valor em km/h: "))
+          #  mps = None
+           # print(f"{kmph} km/h são {mps} m/s.")
 
-        elif escolha == "8":
-            mps = float(input("Digite o valor em m/s: "))
-            kmph = None
-            print(f"{mps} m/s são {kmph} km/h.")
+        #elif escolha == "8":
+         #   mps = float(input("Digite o valor em m/s: "))
+          #  kmph = None
+           # print(f"{mps} m/s são {kmph} km/h.")
 
         else:
             print("Escolha inválida. Por favor, tente novamente.")
