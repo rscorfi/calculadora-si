@@ -1,5 +1,6 @@
 import volume as vol
 import comprimento as dim
+import massa
 
 def main():
     """
@@ -39,12 +40,12 @@ def main():
 
         elif escolha == "3":
             gramas = float(input("Digite o valor em gramas: "))
-            quilogramas = None
+            quilogramas = massa.gramas_para_quilogramas(gramas)
             print(f"{gramas} gramas são {quilogramas} quilogramas.")
            
         elif escolha == "4":
             quilogramas = float(input("Digite o valor em quilogramas: "))
-            gramas = None
+            gramas = massa.quilogramas_para_gramas(quilogramas)
             print(f"{quilogramas} quilogramas são {gramas} gramas.")
 
         elif escolha == "5":
