@@ -1,4 +1,5 @@
 import volume as vol
+import comprimento as dim
 
 def main():
     """
@@ -28,12 +29,12 @@ def main():
 
         if escolha == "1":
             metros = float(input("Digite o valor em metros: "))
-            quilometros = None
+            quilometros = dim.metros_para_quilometros(metros)
             print(f"{metros} metros são {quilometros} quilômetros.")
             
         elif escolha == "2":
             quilometros = float(input("Digite o valor em quilômetros: "))
-            metros = None
+            metros = dim.quilometros_para_metros(quilometros)
             print(f"{quilometros} quilômetros são {metros} metros.")
 
         elif escolha == "3":
